@@ -11,3 +11,5 @@ resources:
   - lth-data-science-team-workspace
   - neurosurgery-generic-workspace
   - uhmb-generic-workspace
+  - lth-ugi-surgery-generic-workspace
+  
