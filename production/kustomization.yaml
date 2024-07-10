@@ -12,4 +12,5 @@ resources:
   - neurosurgery-generic-workspace
   - uhmb-generic-workspace
   - lth-ugi-surgery-generic-workspace
+  - lth-finance-workspace
   
