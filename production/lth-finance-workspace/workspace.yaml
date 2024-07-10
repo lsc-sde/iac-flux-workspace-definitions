@@ -5,9 +5,10 @@ metadata:
   annotations:
     kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
-  displayName: lth-finance Workspace
+  displayName: LTH Finance Workspace
   description: |
-    Workspace for LTH Finance Department
+    All work must be stored in /home/jovyan/lth-finance-workspace.
+    Any work saved outside of this folder will be lost between sessions.
   validity:
     availableFrom: "2024-07-10"
     expires: "2025-07-31"
