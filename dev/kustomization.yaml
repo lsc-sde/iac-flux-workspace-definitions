@@ -4,3 +4,4 @@ namespace: jupyterhub
 resources:
   - ../shared
   - example-workspace-20240516
+  - example-workspace-20240716

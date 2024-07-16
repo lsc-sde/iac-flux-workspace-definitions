@@ -1,0 +1,23 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspace
+metadata:
+  name: example-workspace-20240716
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  displayName: Example workspace - 2024-07-16
+  description: |
+    Basic environment for testing a workspace that uses the datascience-large nodepool
+  
+  validity:
+    availableFrom: "2022-01-01"
+    expires: "2030-01-01"
+  
+  jupyterWorkspace:
+    image: lscsde/datascience-notebook-default:0.1.19
+    tolerations:
+    - key: "sdeAppType"
+      value: "datascience-large"
+      effect: "NoSchedule"
+    nodeSelector:
+      lsc-sde.nhs.uk/nodeType: datascience-large
