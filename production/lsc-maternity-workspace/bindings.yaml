@@ -1,0 +1,21 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: lsc-maternity-workspace-vishnu-chandrabalan
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: lsc-maternity-workspace
+  username: "vishnu.chandrabalan@lthtr.nhs.uk"
+  expires: "2030-12-31"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: lsc-maternity-workspace-gillian-byrne
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: lsc-maternity-workspace
+  username: "gillian.byrne@lthtr.nhs.uk"
+  expires: "2030-12-31"
