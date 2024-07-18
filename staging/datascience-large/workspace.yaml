@@ -26,3 +26,13 @@ spec:
       limits:
         memory: "60G"
         cpu: 2
+    tolerations:
+    - key: "xlscsde.nhs.uk/appType"
+      value: "datascience-notebook"
+      effect: "NoSchedule"
+    - key: "xlscsde.nhs.uk/nodeSize"
+      value: "large"
+      effect: "NoSchedule"
+    nodeSelector:
+      xlscsde.nhs.uk/appType: datascience-notebook
+      xlscsde.nhs.uk/nodeSize: large
