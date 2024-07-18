@@ -14,4 +14,4 @@ resources:
   - lth-ugi-surgery-generic-workspace
   - lth-finance-workspace
   - nihr-lcrf-workspace
-  
+  - lsc-maternity-workspace
