@@ -5,7 +5,7 @@ metadata:
   annotations:
     kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
-  displayName: 
+  displayName: Large Datascience Notebook
   description: |
     Test of the datascience large nodes with scale-to-zero capabilities
 
