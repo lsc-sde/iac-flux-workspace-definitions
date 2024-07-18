@@ -1,0 +1,28 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspace
+metadata:
+  name: datascience-large
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  displayName: 
+  description: |
+    Test of the datascience large nodes with scale-to-zero capabilities
+
+    Please note that provisioning this workspace will take longer considerably longer as it requires node to be provisioned in real-time.
+
+  validity:
+    availableFrom: "2022-01-01"
+    expires: "2030-01-01"
+  
+  jupyterWorkspace:
+    image: lscsde/datascience-notebook-default:0.1.0
+    persistentVolumeClaim: 
+      name: datascience-large
+    resources:
+      requests:
+        memory: "48G"
+        cpu: 0.5
+      limits:
+        memory: "60G"
+        cpu: 2
