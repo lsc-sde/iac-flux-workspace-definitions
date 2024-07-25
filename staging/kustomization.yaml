@@ -3,4 +3,4 @@ kind: Kustomization
 namespace: jupyterhub
 resources:
   - ../production
-#  - datascience-large
+  - datascience-large
