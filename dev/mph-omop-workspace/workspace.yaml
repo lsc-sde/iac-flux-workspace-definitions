@@ -1,0 +1,19 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspace
+metadata:
+  name: mph-omop-workspace
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  displayName: DARWIN Workspace
+  description: |
+    Darwin v1.4.0 omop workspace
+  
+  validity:
+    availableFrom: "2022-05-01"
+    expires: "2025-12-31"
+  
+  jupyterWorkspace:
+    image: lscsde/docker-datascience-jupyter-omop:darwin-v1.4.0-amd64
+    persistentVolumeClaim: 
+      name: jupyter-mph-omop-workspace

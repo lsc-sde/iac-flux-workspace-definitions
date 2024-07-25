@@ -5,3 +5,4 @@ resources:
   - ../shared
   - example-workspace-20240516
   - example-workspace-20240716
+  - mph-omop-workspace
