@@ -12,7 +12,7 @@ spec:
     availableFrom: "2024-08-06"
     expires: "2030-12-31"
   jupyterWorkspace:
-    image: lscsde/docker-datascience-jupyter-omop:darwin-v1.4.0-amd64
+    image: lscsde/datascience-jupyter-omop:darwinv1-0.1.93
     persistentVolumeClaim: 
       name: jupyter-uom-antimicrobial-workspace
     resources:
