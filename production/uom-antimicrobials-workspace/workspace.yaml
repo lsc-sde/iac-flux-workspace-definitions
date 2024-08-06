@@ -1,0 +1,24 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspace
+metadata:
+  name: uom-antimicrobial-workspace
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  displayName: Antimicrobial Prescribing Research
+  description: |
+    Collaboration with University of Manchester
+  validity:
+    availableFrom: "2024-08-06"
+    expires: "2030-12-31"
+  jupyterWorkspace:
+    image: lscsde/docker-datascience-jupyter-omop:darwin-v1.4.0-amd64
+    persistentVolumeClaim: 
+      name: jupyter-uom-antimicrobial-workspace
+    resources:
+      requests:
+        memory: 256M
+        cpu: 0.1
+      limits:
+        memory: 6G
+        cpu: 1
