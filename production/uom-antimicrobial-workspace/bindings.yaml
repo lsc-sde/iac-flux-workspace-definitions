@@ -1,0 +1,54 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: uom-antimicrobial-workspace-vishnu-chandrabalan
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: uom-antimicrobial-workspace
+  username: "vishnu.chandrabalan@lthtr.nhs.uk"
+  expires: "2030-12-31"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: uom-antimicrobial-workspace-yuan-tian
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: uom-antimicrobial-workspace
+  username: "yuan.tian@lthtr.nhs.uk"
+  expires: "2026-12-31"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: uom-antimicrobial-workspace-amani-albalushi
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: uom-antimicrobial-workspace
+  username: "amani.albalushi@lthtr.nhs.uk"
+  expires: "2026-12-31"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: uom-antimicrobial-workspace-timothy-howcroft
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: uom-antimicrobial-workspace
+  username: "timothy.howcroft@lthtr.nhs.uk"
+  expires: "2030-12-31"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: uom-antimicrobial-workspace-quinta-ashcroft
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: uom-antimicrobial-workspace
+  username: "quinta.ashcroft@lthtr.nhs.uk"
+  expires: "2030-12-31"
