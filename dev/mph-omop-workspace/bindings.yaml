@@ -17,5 +17,5 @@ metadata:
     kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: mph-omop-workspace
-  username: "m.harding@lancaster.ac.uk"
+  username: "hardingm@lancaster.ac.uk"
   expires: "2030-01-01"
