@@ -17,3 +17,23 @@ spec:
     image: lscsde/datascience-jupyter-omop:darwinv1-0.1.111
     persistentVolumeClaim: 
       name: jupyter-mph-omop-workspace
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspace
+metadata:
+  name: metrics-test-workspace
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  displayName: Metrics Test Workspace
+  description: |
+    Metrics test workspace
+  
+  validity:
+    availableFrom: "2022-05-01"
+    expires: "2025-12-31"
+  
+  jupyterWorkspace:
+    image: lscsde/datascience-jupyter-omop:darwinv1-0.1.111
+    persistentVolumeClaim: 
+      name: jupyter-metrics-test-workspace

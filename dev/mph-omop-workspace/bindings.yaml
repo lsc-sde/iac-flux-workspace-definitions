@@ -19,3 +19,14 @@ spec:
   workspace: mph-omop-workspace
   username: "hardingm@lancaster.ac.uk"
   expires: "2030-01-01"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: metrics-test-workspace-mike-harding
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: metrics-test-workspace
+  username: "hardingm@lancaster.ac.uk"
+  expires: "2030-01-01"
