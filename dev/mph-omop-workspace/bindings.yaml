@@ -17,7 +17,7 @@ metadata:
     kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: mph-omop-workspace
-  username: "hardingm@lancaster.ac.uk"
+  username: "m.harding@lancaster.ac.uk"
   expires: "2030-01-01"
 ---
 apiVersion: xlscsde.nhs.uk/v1
@@ -28,5 +28,5 @@ metadata:
     kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: metrics-test-workspace
-  username: "hardingm@lancaster.ac.uk"
+  username: "m.harding@lancaster.ac.uk"
   expires: "2030-01-01"
