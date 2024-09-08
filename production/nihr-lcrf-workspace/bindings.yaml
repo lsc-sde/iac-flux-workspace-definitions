@@ -3,7 +3,7 @@ kind: AnalyticsWorkspaceBinding
 metadata:
   name: nihr-lcrf-workspace-vishnu-chandrabalan
   annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
+    kustomize.toolkit.fluxcd.io/prune: true
 spec:
   workspace: nihr-lcrf-workspace
   username: "vishnu.chandrabalan@lthtr.nhs.uk"
@@ -14,7 +14,7 @@ kind: AnalyticsWorkspaceBinding
 metadata:
   name: nihr-lcrf-workspace-catherine-neary
   annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
+    kustomize.toolkit.fluxcd.io/prune: true
 spec:
   workspace: nihr-lcrf-workspace
   username: "catherine.neary@lthtr.nhs.uk"

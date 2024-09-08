@@ -3,7 +3,7 @@ kind: AnalyticsWorkspace
 metadata:
   name: nihr-lcrf-workspace
   annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
+    kustomize.toolkit.fluxcd.io/prune: true
 spec:
   displayName: NIHR Lancashire Clinical Research Facility Workspace
   description: |

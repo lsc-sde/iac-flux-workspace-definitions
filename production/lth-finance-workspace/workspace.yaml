@@ -3,7 +3,7 @@ kind: AnalyticsWorkspace
 metadata:
   name: lth-finance-workspace
   annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
+    kustomize.toolkit.fluxcd.io/prune: true
 spec:
   displayName: LTH Finance Workspace
   description: |

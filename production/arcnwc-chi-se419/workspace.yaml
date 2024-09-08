@@ -3,7 +3,7 @@ kind: AnalyticsWorkspace
 metadata:
   name: arcnwc-chi-se419
   annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
+    kustomize.toolkit.fluxcd.io/prune: true
 spec:
   displayName: ARCNWC-CHI-SE419
   description: |

@@ -3,7 +3,7 @@ kind: AnalyticsWorkspaceBinding
 metadata:
   name: lth-finance-workspace-vishnu-chandrabalan
   annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
+    kustomize.toolkit.fluxcd.io/prune: true
 spec:
   workspace: lth-finance-workspace
   username: "vishnu.chandrabalan@lthtr.nhs.uk"
@@ -14,7 +14,7 @@ kind: AnalyticsWorkspaceBinding
 metadata:
   name: lth-finance-workspace-stephen-dobson
   annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
+    kustomize.toolkit.fluxcd.io/prune: true
 spec:
   workspace: lth-finance-workspace
   username: "stephen.dobson@lthtr.nhs.uk"
@@ -25,7 +25,7 @@ kind: AnalyticsWorkspaceBinding
 metadata:
   name: lth-finance-workspace-ellenor-forsyth
   annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
+    kustomize.toolkit.fluxcd.io/prune: true
 spec:
   workspace: lth-finance-workspace
   username: "ellenor.forsyth@lthtr.nhs.uk"
