@@ -1,0 +1,19 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspace
+metadata:
+  name: ohdsi-conf-workspace
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  displayName: OHDSI Conference Workspace
+  description: |
+    DARWIN OMOP workspace for OHDSI Conference Demo
+  
+  validity:
+    availableFrom: "2024-09-16"
+    expires: "2025-09-16"
+  
+  jupyterWorkspace:
+    image: lscsde/datascience-jupyter-omop:darwinv1-0.1.111
+    persistentVolumeClaim: 
+      name: jupyter-mph-omop-workspace
