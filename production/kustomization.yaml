@@ -16,4 +16,4 @@ resources:
   - nihr-lcrf-workspace
   - lsc-maternity-workspace
   - uom-antimicrobial-workspace
-  
+  - llm-workspace

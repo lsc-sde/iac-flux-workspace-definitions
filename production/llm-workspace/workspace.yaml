@@ -1,0 +1,19 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspace
+metadata:
+  name: llm-workspace
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  displayName: LLM Workspace
+  description: |
+    Shared workspace for LLM Research
+
+  validity:
+    availableFrom: "2025-12-16"
+    expires: "2030-12-31"
+
+  jupyterWorkspace:
+    image: lscsde/datascience-notebook-default:0.1.0
+    persistentVolumeClaim:
+      name: jupyter-llm-workspace
