@@ -17,3 +17,4 @@ resources:
   - lsc-maternity-workspace
   - uom-antimicrobial-workspace
   - llm-workspace
+  - sqlmesh-workspaces

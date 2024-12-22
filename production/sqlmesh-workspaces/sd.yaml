@@ -1,0 +1,34 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspace
+metadata:
+  name: sqlmesh-workspace-sd
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  displayName: SQLMesh Data Engineering Workspace (SD)
+  description: SQLMesh Data Engineering Workspace (SD)
+  validity:
+    availableFrom: "2024-12-22"
+    expires: "2030-12-31"
+  jupyterWorkspace:
+    image: lscsde/dataengineering-sqlmesh-notebook:0.1.1
+    persistentVolumeClaim:
+      name: jupyter-sqlmesh-workspace-sd
+    resources:
+      requests:
+        memory: "512M"
+        cpu: 0.1
+      limits:
+        memory: "2G"
+        cpu: 0.5
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: sqlmesh-workspace-sd
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: sqlmesh-workspace-sd
+  username: "stephen.dobson@lthtr.nhs.uk"
+  expires: "2030-01-01"
