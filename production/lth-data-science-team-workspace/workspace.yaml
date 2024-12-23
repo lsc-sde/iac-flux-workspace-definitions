@@ -2,8 +2,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspace
 metadata:
   name: lth-data-science-team-workspace
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   displayName: LTH Data Science Team Workspace
   description: |

@@ -2,8 +2,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspace
 metadata:
   name: ohdsi-conf-workspace
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   displayName: OHDSI Conference Workspace
   description: |

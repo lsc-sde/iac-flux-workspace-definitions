@@ -2,8 +2,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspace
 metadata:
   name: datascience-large
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   displayName: Large Datascience Notebook
   description: |

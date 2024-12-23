@@ -2,8 +2,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspace
 metadata:
   name: lth-ugi-surgery-generic-workspace
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   displayName: LTH UGI Surgery Generic Workspace
   description: |

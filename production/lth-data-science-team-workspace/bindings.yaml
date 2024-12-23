@@ -2,8 +2,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: lth-data-science-team-workspace-vishnu-chandrabalan
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: lth-data-science-team-workspace
   username: "vishnu.chandrabalan@lthtr.nhs.uk"
@@ -13,8 +11,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: lth-data-science-team-workspace-andrew-robinson
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: lth-data-science-team-workspace
   username: "andrew.robinson@lthtr.nhs.uk"
@@ -24,8 +20,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: lth-data-science-team-workspace-quinta-ashcroft
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: lth-data-science-team-workspace
   username: "quinta.ashcroft@lthtr.nhs.uk"
@@ -35,8 +29,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: lth-data-science-team-workspace-stephen-dobson
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: lth-data-science-team-workspace
   username: "stephen.dobson@lthtr.nhs.uk"
@@ -46,8 +38,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: lth-data-science-team-workspace-timothy-howcroft
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: lth-data-science-team-workspace
   username: "timothy.howcroft@lthtr.nhs.uk"

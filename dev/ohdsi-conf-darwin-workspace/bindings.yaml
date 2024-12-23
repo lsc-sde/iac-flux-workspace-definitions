@@ -2,8 +2,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: ohdsi-conf-workspace-vishnu-chandrabalan
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: ohdsi-conf-workspace
   username: "vishnu.chandrabalan@lthtr.nhs.uk"
@@ -13,8 +11,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: ohdsi-conf-workspace-mike-harding
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: ohdsi-conf-workspace
   username: "m.harding@lancaster.ac.uk"
@@ -24,8 +20,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: ohdsi-conf-workspace-quinta-ashcroft
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: ohdsi-conf-workspace
   username: "quinta.ashcroft@lthtr.nhs.uk"
@@ -35,8 +29,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: ohdsi-conf-workspace-timothy-howcroft
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: ohdsi-conf-workspace
   username: "timothy.howcroft@lthtr.nhs.uk"
