@@ -3,8 +3,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: lth-ugi-surgery-generic-workspace-vishnu-chandrabalan
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: lth-ugi-surgery-generic-workspace
   username: "vishnu.chandrabalan@lthtr.nhs.uk"
@@ -14,8 +12,6 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: lth-ugi-surgery-generic-workspace-david-larkin
-  annotations:
-    kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: lth-ugi-surgery-generic-workspace
   username: "david.larkin@lthtr.nhs.uk"
