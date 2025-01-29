@@ -1,0 +1,15 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspace
+metadata:
+  name: jg-llm-workspace
+spec:
+  displayName: LLM test Workspace
+  description: |
+    llm workspace
+  validity:
+    availableFrom: "2025-01-01"
+    expires: "2025-12-31"
+  jupyterWorkspace:
+    image: lscsde/llm-workspace:0.1.7
+    persistentVolumeClaim: 
+      name: jupyter-jg-llm-workspace

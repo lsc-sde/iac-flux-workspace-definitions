@@ -1,0 +1,36 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: llm-workspace-vishnu-chandrabalan
+spec:
+  workspace: jg-llm-workspace
+  username: "vishnu.chandrabalan@lthtr.nhs.uk"
+  expires: "2030-01-01"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: llm-workspace-mike-harding
+spec:
+  workspace: jg-llm-workspace
+  username: "m.harding@lancaster.ac.uk"
+  expires: "2030-01-01"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: llm-workspace-shaun-turner
+spec:
+  workspace: jg-llm-workspace
+  username: "shaun.turner1@nhs.net"
+  expires: "2030-01-01"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: llm-workspace-james-gardner
+spec:
+  workspace: jg-llm-workspace
+  username: "james.gardner@lthtr.nhs.uk"
+  expires: "2030-01-01"
+---
