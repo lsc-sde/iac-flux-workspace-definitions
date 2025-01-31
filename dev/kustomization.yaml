@@ -7,3 +7,4 @@ resources:
   - example-workspace-20240716
   - mph-omop-workspace
   - ohdsi-conf-darwin-workspace
+  - jg-llm-workspace
