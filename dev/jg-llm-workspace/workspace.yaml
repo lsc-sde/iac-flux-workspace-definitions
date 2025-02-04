@@ -6,25 +6,33 @@ spec:
   displayName: LLM test Workspace
   description: |
     llm workspace
+
   validity:
     availableFrom: "2025-01-01"
     expires: "2025-12-31"
+
   jupyterWorkspace:
     image: lscsde/llm-workspace:0.1.7
     persistentVolumeClaim: 
       name: jupyter-jg-llm-workspace
+    resources:
+      requests: #cpu and memory to possibly be adjusted
+        nvidia.com/gpu: 1
+        memory: "48G"
+        cpu: 0.5
+      limits:
+        nvidia.com/gpu: 1
+        memory: "60G"
+        cpu: 2
     tolerations:
+      - key: "xlscsde.nhs.uk/appType"
+        value: "llm-workspace"
+        effect: "NoSchedule"
       - key: "nvidia.com/gpu"
         operator: "Exists"
         effect: "NoSchedule"
     nodeSelector:
+      xlscsde.nhs.uk/appType: llm-workspace
       nvidia.com/gpu: "true"
-    resources:
-      requests:
-        nvidia.com/gpu: 1
-        #cpu and memory to be filled
-      limits:
-        nvidia.com/gpu: 1
-        #cpu and memory to be filled
-      
+    
         
