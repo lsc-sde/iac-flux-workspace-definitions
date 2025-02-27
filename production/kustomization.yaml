@@ -18,3 +18,4 @@ resources:
   - uom-antimicrobial-workspace
   - llm-workspace
   - sqlmesh-workspaces
+  - jg-llm-workspace
