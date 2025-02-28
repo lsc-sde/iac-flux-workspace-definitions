@@ -1,0 +1,17 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: llm-gpu-workspace-vishnu-chandrabalan
+spec:
+  workspace: llm-gpu-workspace
+  username: "vishnu.chandrabalan@lthtr.nhs.uk"
+  expires: "2030-01-01"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: llm-gpu-workspace-zhangshu-jiang
+spec:
+  workspace: llm-gpu-workspace
+  username: "zhangshu.jiang@lthtr.nhs.uk"
+  expires: "2030-01-01"

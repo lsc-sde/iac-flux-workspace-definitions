@@ -1,38 +1,35 @@
 apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspace
 metadata:
-  name: jg-llm-workspace
+  name: llm-gpu-workspace
 spec:
-  displayName: LLM test Workspace
+  displayName: LLM GPU Workspace
   description: |
-    llm workspace
-
+    Workspace for research into Large Language Models using Ollama and GPU
   validity:
     availableFrom: "2025-01-01"
-    expires: "2025-12-31"
+    expires: "2030-12-31"
 
   jupyterWorkspace:
     image: lscsde/llm-workspace:0.1.7
-    persistentVolumeClaim: 
-      name: jupyter-jg-llm-workspace
+    persistentVolumeClaim:
+      name: jupyter-llm-gpu-workspace
     resources:
       requests: #cpu and memory to possibly be adjusted
         nvidia.com/gpu: 1
-        memory: "48G"
+        memory: "8G"
         cpu: 0.5
       limits:
         nvidia.com/gpu: 1
-        memory: "60G"
+        memory: "12G"
         cpu: 2
     tolerations:
       - key: "xlscsde.nhs.uk/appType"
-        value: "llm-workspace"
+        value: "llm-gpu-workspace"
         effect: "NoSchedule"
       - key: "nvidia.com/gpu"
         operator: "Exists"
         effect: "NoSchedule"
     nodeSelector:
-      xlscsde.nhs.uk/appType: llm-workspace
+      xlscsde.nhs.uk/appType: llm-gpu-workspace
       nvidia.com/gpu: "true"
-    
-        
