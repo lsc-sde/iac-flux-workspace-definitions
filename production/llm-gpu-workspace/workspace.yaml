@@ -28,3 +28,5 @@ spec:
         operator: "Equal"
         value: "llm-gpu-workspace"
         effect: "NoSchedule"
+    nodeSelector:
+      xlscsde.nhs.uk/appType: llm-gpu-workspace
