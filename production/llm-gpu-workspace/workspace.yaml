@@ -27,9 +27,3 @@ spec:
       - key: "xlscsde.nhs.uk/appType"
         value: "llm-gpu-workspace"
         effect: "NoSchedule"
-      - key: "nvidia.com/gpu"
-        operator: "Exists"
-        effect: "NoSchedule"
-    nodeSelector:
-      xlscsde.nhs.uk/appType: llm-gpu-workspace
-      nvidia.com/gpu: "true"
