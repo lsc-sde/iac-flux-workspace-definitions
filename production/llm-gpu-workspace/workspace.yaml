@@ -25,5 +25,6 @@ spec:
         cpu: 2
     tolerations:
       - key: "xlscsde.nhs.uk/appType"
+        operator: "Equal"
         value: "llm-gpu-workspace"
         effect: "NoSchedule"
