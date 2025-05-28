@@ -3,4 +3,3 @@ kind: Kustomization
 namespace: jupyterhub
 resources:
   - ../shared
-  - example-workspace-20240516

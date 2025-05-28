@@ -24,12 +24,3 @@ spec:
   workspace: metrics-test-workspace
   username: "m.harding@lancaster.ac.uk"
   expires: "2030-01-01"
----
-apiVersion: xlscsde.nhs.uk/v1
-kind: AnalyticsWorkspaceBinding
-metadata:
-  name: metrics-test-workspace-shaun-turner
-spec:
-  workspace: metrics-test-workspace
-  username: "shaun.turner1@nhs.net"
-  expires: "2030-01-01"

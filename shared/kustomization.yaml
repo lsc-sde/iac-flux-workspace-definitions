@@ -4,4 +4,3 @@ namespace: jupyterhub
 resources:
   - advanced-generic-workspace
   - default-generic-workspace
-  - smoke-tests

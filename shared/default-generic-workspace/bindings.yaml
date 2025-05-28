@@ -1,15 +1,6 @@
 apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
-  name: default-generic-workspace-shaun-turner
-spec:
-  workspace: default-generic-workspace
-  username: "shaun.turner1@nhs.net"
-  expires: "2030-01-01"
----
-apiVersion: xlscsde.nhs.uk/v1
-kind: AnalyticsWorkspaceBinding
-metadata:
   name: default-generic-workspace-vishnu-chandrabalan
 spec:
   workspace: default-generic-workspace
