@@ -3,19 +3,12 @@ kind: Kustomization
 namespace: jupyterhub
 resources:
   - ../shared
-  - avoidable-admissions
   - diabetic-foot-ulcer-research
-  - arcnwc-chi-se419
-  - arcnwc-chi-se421
-  - vc-sd-workspace
-  - lth-data-science-team-workspace
-  - neurosurgery-generic-workspace
-  - uhmb-generic-workspace
-  - lth-ugi-surgery-generic-workspace
-  - lth-finance-workspace
-  - nihr-lcrf-workspace
-  - lsc-maternity-workspace
-  - uom-antimicrobial-workspace
-  - llm-workspace
-  - sqlmesh-workspaces
   - llm-gpu-workspace
+  - llm-workspace
+  - lth-colorectal-generic-workspace
+  - lth-data-science-team-workspace
+  - sqlmesh-workspaces
+  - uhmb-generic-workspace
+  - uom-antimicrobial-workspace
+  - vc-sd-workspace
