@@ -1,8 +1,0 @@
-apiVersion: xlscsde.nhs.uk/v1
-kind: AnalyticsWorkspaceBinding
-metadata:
-  name: example-workspace-20240716-shaun-turner
-spec:
-  workspace: example-workspace-20240716
-  username: "shaun.turner1@nhs.net"
-  expires: "2030-01-01"
