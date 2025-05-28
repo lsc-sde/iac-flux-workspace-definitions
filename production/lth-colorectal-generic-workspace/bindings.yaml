@@ -1,0 +1,17 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: lth-colorectal-generic-workspace-vishnu-chandrabalan
+spec:
+  workspace: lth-colorectal-generic-workspace
+  username: "vishnu.chandrabalan@lthtr.nhs.uk"
+  expires: "2030-01-01"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: lth-colorectal-generic-workspace-prodromos-kanavidis
+spec:
+  workspace: lth-colorectal-generic-workspace
+  username: "prodromos.kanavidis@lthtr.nhs.uk"
+  expires: "2030-01-01"
