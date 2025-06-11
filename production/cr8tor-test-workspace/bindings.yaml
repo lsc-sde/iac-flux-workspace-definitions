@@ -1,0 +1,26 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: cr8tor-test-workspace-vishnu-chandrabalan
+spec:
+  workspace: cr8tor-test-workspace
+  username: "vishnu.chandrabalan@lthtr.nhs.uk"
+  expires: "2030-01-01"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: cr8tor-test-workspace-michael-adekoya
+spec:
+  workspace: cr8tor-test-workspace
+  username: "michael.adekoya@lthtr.nhs.uk"
+  expires: "2030-01-01"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: cr8tor-test-workspace-sai-samreddy
+spec:
+  workspace: cr8tor-test-workspace
+  username: "sai.s@lthtr.nhs.uk"
+  expires: "2030-01-01"
