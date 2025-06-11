@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: jupyterhub
 resources:
   - ../shared
+  - cr8tor-test-workspace
   - diabetic-foot-ulcer-research
   - llm-gpu-workspace
   - llm-workspace
