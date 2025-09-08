@@ -3,3 +3,15 @@ kind: Kustomization
 resources:
   - vc.yaml
   - sd.yaml
+  - anthony-ganley.yaml
+  - dale-wright.yaml
+  - jonathan-dunn.yaml
+  - kelly-heys.yaml
+  - kristian-heaton.yaml
+  - matthew-cartwright1.yaml
+  - michael-adekoya.yaml
+  - mubean-patel.yaml
+  - percy-moyo.yaml
+  - sai-s.yaml
+  - timothy-howcroft.yaml
+  - zuber-ismail.yaml

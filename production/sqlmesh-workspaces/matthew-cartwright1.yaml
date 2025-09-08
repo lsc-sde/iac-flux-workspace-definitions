@@ -1,19 +1,19 @@
 apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspace
 metadata:
-  name: sqlmesh-workspace-sd
+  name: sqlmesh-workspace-matthew-cartwright1
   annotations:
     kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
-  displayName: SQLMesh Data Engineering Workspace (SD)
-  description: SQLMesh Data Engineering Workspace (SD)
+  displayName: SQLMesh Data Engineering Workspace (Matthew Cartwright1)
+  description: SQLMesh Data Engineering Workspace (Matthew Cartwright1)
   validity:
     availableFrom: "2024-12-22"
     expires: "2030-12-31"
   jupyterWorkspace:
     image: ghcr.io/lsc-sde/docker-dataengineering-sqlmesh-notebook:sqlmesh-0.216.0
     persistentVolumeClaim:
-      name: jupyter-sqlmesh-workspace-sd
+      name: jupyter-sqlmesh-workspace-matthew-cartwright1
     resources:
       requests:
         memory: "512M"
@@ -25,10 +25,10 @@ spec:
 apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
-  name: sqlmesh-workspace-sd
+  name: sqlmesh-workspace-matthew-cartwright1
   annotations:
     kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
-  workspace: sqlmesh-workspace-sd
-  username: "stephen.dobson@lthtr.nhs.uk"
+  workspace: sqlmesh-workspace-matthew-cartwright1
+  username: "matthew.cartwright1@nhs.net"
   expires: "2030-01-01"
