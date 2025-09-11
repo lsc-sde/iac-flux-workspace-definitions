@@ -1,0 +1,15 @@
+- op: replace
+  path: /spec/jupyterWorkspace/image
+  value: ghcr.io/lsc-sde/docker-dataengineering-sqlmesh-notebook:sqlmesh-0.217.0
+- op: replace
+  path: /spec/jupyterWorkspace/resources/requests/memory
+  value: "1.5G"
+- op: replace
+  path: /spec/jupyterWorkspace/resources/requests/cpu
+  value: "0.5"
+- op: replace
+  path: /spec/jupyterWorkspace/resources/limits/memory
+  value: "2G"
+- op: replace
+  path: /spec/jupyterWorkspace/resources/limits/cpu
+  value: "1"

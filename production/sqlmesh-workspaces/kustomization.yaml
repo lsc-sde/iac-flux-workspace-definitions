@@ -16,5 +16,8 @@ resources:
   - timothy-howcroft.yaml
   - zuber-ismail.yaml
 
-patchesStrategicMerge:
-  - image-update-patch.yaml
+patches:
+  - path: _workspace-patch.yaml
+    target:
+      kind: AnalyticsWorkspace
+      labelSelector: "app=sqlmesh"
