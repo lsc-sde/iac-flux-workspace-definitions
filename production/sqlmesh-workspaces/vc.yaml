@@ -2,6 +2,8 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspace
 metadata:
   name: sqlmesh-workspace-vc
+  labels:
+    app: sqlmesh
   annotations:
     kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
@@ -16,7 +18,7 @@ spec:
       name: jupyter-sqlmesh-workspace-vc
     resources:
       requests:
-        memory: "1G"
+        memory: "1.5G"
         cpu: 0.5
       limits:
         memory: "2G"
@@ -26,6 +28,8 @@ apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
   name: sqlmesh-workspace-vc
+  labels:
+    app: sqlmesh
   annotations:
     kustomize.toolkit.fluxcd.io/prune: disabled
 spec:

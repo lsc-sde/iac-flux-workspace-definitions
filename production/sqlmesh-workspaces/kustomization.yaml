@@ -15,3 +15,6 @@ resources:
   - sai-s.yaml
   - timothy-howcroft.yaml
   - zuber-ismail.yaml
+
+patchesStrategicMerge:
+  - image-update-patch.yaml
