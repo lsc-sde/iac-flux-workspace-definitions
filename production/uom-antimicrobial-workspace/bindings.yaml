@@ -46,8 +46,8 @@ spec:
 apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
-  name: uom-antimicrobial-workspace-quinta-ashcroft
+  name: uom-antimicrobial-workspace-ian-farr
 spec:
   workspace: uom-antimicrobial-workspace
-  username: "quinta.ashcroft@lthtr.nhs.uk"
+  username: "ian.farr@lthtr.nhs.uk"
   expires: "2030-12-31"
