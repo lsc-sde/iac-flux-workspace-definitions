@@ -1,0 +1,38 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspace
+metadata:
+  name: sqlmesh-workspace-stephen-elves
+  labels:
+    app: sqlmesh
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  displayName: SQLMesh Data Engineering Workspace (Stephen Elves - Catalyst)
+  description: SQLMesh Data Engineering Workspace (Stephen Elves - Catalyst)
+  validity:
+    availableFrom: "2024-11-25"
+    expires: "2026-02-25"
+  jupyterWorkspace:
+    image: ghcr.io/lsc-sde/docker-dataengineering-sqlmesh-notebook:sqlmesh-0.216.0
+    persistentVolumeClaim:
+      name: jupyter-sqlmesh-workspace-stephen-elves
+    resources:
+      requests:
+        memory: "1G"
+        cpu: 0.5
+      limits:
+        memory: "2G"
+        cpu: 1
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: sqlmesh-workspace-stephen-elves
+  labels:
+    app: sqlmesh
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: sqlmesh-workspace-stephen-elves
+  username: "stephen.elves@lthtr.nhs.uk"
+  expires: "2026-02-25"
