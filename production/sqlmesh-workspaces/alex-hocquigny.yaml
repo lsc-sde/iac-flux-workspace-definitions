@@ -34,5 +34,5 @@ metadata:
     kustomize.toolkit.fluxcd.io/prune: disabled
 spec:
   workspace: sqlmesh-workspace-alex-hocquigny
-  username: "Alex.Hocquigny@catalyst-it.co.uk"
+  username: "alex.hocquigny@lthtr.nhs.uk"
   expires: "2026-02-25"
