@@ -24,3 +24,12 @@ spec:
   workspace: diabetic-foot-ulcer-research
   username: "ian.farr@lthtr.nhs.uk"
   expires: "2030-01-01"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: diabetic-foot-ulcer-research-jincy-james
+spec:
+  workspace: diabetic-foot-ulcer-research
+  username: "jincy.james8@nhs.net"
+  expires: "2030-01-01"
