@@ -10,24 +10,6 @@ spec:
 apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
 metadata:
-  name: lth-data-science-team-workspace-andrew-robinson
-spec:
-  workspace: lth-data-science-team-workspace
-  username: "andrew.robinson@lthtr.nhs.uk"
-  expires: "2030-01-01"
----
-apiVersion: xlscsde.nhs.uk/v1
-kind: AnalyticsWorkspaceBinding
-metadata:
-  name: lth-data-science-team-workspace-quinta-ashcroft
-spec:
-  workspace: lth-data-science-team-workspace
-  username: "quinta.ashcroft@lthtr.nhs.uk"
-  expires: "2030-01-01"
----
-apiVersion: xlscsde.nhs.uk/v1
-kind: AnalyticsWorkspaceBinding
-metadata:
   name: lth-data-science-team-workspace-stephen-dobson
 spec:
   workspace: lth-data-science-team-workspace
@@ -41,4 +23,22 @@ metadata:
 spec:
   workspace: lth-data-science-team-workspace
   username: "timothy.howcroft@lthtr.nhs.uk"
+  expires: "2030-01-01"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: lth-data-science-team-workspace-ian-farr
+spec:
+  workspace: lth-data-science-team-workspace
+  username: "ian.farr@lthtr.nhs.uk"
+  expires: "2030-01-01"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: lth-data-science-team-workspace-jincy-james
+spec:
+  workspace: lth-data-science-team-workspace
+  username: "jincy.james8@nhs.net"
   expires: "2030-01-01"
