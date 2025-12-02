@@ -51,3 +51,12 @@ spec:
   workspace: uom-antimicrobial-workspace
   username: "ian.farr@lthtr.nhs.uk"
   expires: "2030-12-31"
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: uom-antimicrobial-workspace-jincy-james
+spec:
+  workspace: uom-antimicrobial-workspace
+  username: "jincy.james8@nhs.net"
+  expires: "2030-12-31"
