@@ -18,11 +18,11 @@ spec:
       name: jupyter-sqlmesh-workspace-timothy-howcroft
     resources:
       requests:
-        memory: "1G"
-        cpu: 0.5
-      limits:
         memory: "2G"
         cpu: 1
+      limits:
+        memory: "4G"
+        cpu: 4
 ---
 apiVersion: xlscsde.nhs.uk/v1
 kind: AnalyticsWorkspaceBinding
