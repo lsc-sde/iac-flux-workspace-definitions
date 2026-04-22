@@ -1,6 +1,6 @@
 - op: replace
   path: /spec/jupyterWorkspace/image
-  value: ghcr.io/lsc-sde/docker-dataengineering-sqlmesh-notebook:sqlmesh-0.217.0
+  value: ghcr.io/lsc-sde/docker-dataengineering-sqlmesh-notebook:sqlmesh-0.234.1
 - op: replace
   path: /spec/jupyterWorkspace/resources/requests/memory
   value: "1.5G"

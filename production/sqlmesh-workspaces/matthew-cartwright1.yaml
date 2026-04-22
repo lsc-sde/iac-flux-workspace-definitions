@@ -13,7 +13,7 @@ spec:
     availableFrom: "2024-12-22"
     expires: "2030-12-31"
   jupyterWorkspace:
-    image: ghcr.io/lsc-sde/docker-dataengineering-sqlmesh-notebook:sqlmesh-0.216.0
+    image: ghcr.io/lsc-sde/docker-dataengineering-sqlmesh-notebook:sqlmesh-0.234.1
     persistentVolumeClaim:
       name: jupyter-sqlmesh-workspace-matthew-cartwright1
     resources:
