@@ -1,0 +1,38 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspace
+metadata:
+  name: sqlmesh-workspace-warnes-gobalakrishnan
+  labels:
+    app: sqlmesh
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  displayName: SQLMesh Data Engineering Workspace (Warnes Gobalakrishnan)
+  description: SQLMesh Data Engineering Workspace (Warnes Gobalakrishnan)
+  validity:
+    availableFrom: "2024-12-22"
+    expires: "2030-12-31"
+  jupyterWorkspace:
+    image: ghcr.io/lsc-sde/docker-dataengineering-sqlmesh-notebook:sqlmesh-0.234.1
+    persistentVolumeClaim:
+      name: jupyter-sqlmesh-workspace-warnes-gobalakrishnan
+    resources:
+      requests:
+        memory: "1G"
+        cpu: 0.1
+      limits:
+        memory: "2G"
+        cpu: 0.5
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: sqlmesh-workspace-warnes-gobalakrishnan
+  labels:
+    app: sqlmesh
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: sqlmesh-workspace-warnes-gobalakrishnan
+  username: "Warnes.Gobalakrishnan@lthtr.nhs.uk"
+  expires: "2030-01-01"
