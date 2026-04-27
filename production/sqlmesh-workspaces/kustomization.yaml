@@ -19,6 +19,7 @@ resources:
   - steve-bates.yaml
   - timothy-howcroft.yaml
   - zuber-ismail.yaml
+  - warnes-gobalakrishnan.yaml
 
 patches:
   - path: _workspace-patch.yaml
