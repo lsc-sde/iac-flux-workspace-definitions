@@ -1,0 +1,38 @@
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspace
+metadata:
+  name: sqlmesh-workspace-mark-singleton
+  labels:
+    app: sqlmesh
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  displayName: SQLMesh Data Engineering Workspace (Mark Singleton)
+  description: SQLMesh Data Engineering Workspace (Mark Singleton)
+  validity:
+    availableFrom: "2024-12-22"
+    expires: "2030-12-31"
+  jupyterWorkspace:
+    image: ghcr.io/lsc-sde/docker-dataengineering-sqlmesh-notebook:sqlmesh-0.234.1
+    persistentVolumeClaim:
+      name: jupyter-sqlmesh-workspace-mark-singleton
+    resources:
+      requests:
+        memory: "512M"
+        cpu: 0.1
+      limits:
+        memory: "2G"
+        cpu: 0.5
+---
+apiVersion: xlscsde.nhs.uk/v1
+kind: AnalyticsWorkspaceBinding
+metadata:
+  name: sqlmesh-workspace-mark-singleton
+  labels:
+    app: sqlmesh
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+spec:
+  workspace: sqlmesh-workspace-mark-singleton
+  username: "marksingleton@nhs.net"
+  expires: "2030-01-01"
