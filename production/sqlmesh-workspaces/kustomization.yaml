@@ -19,6 +19,7 @@ resources:
   - steve-bates.yaml
   - timothy-howcroft.yaml
   - zuber-ismail.yaml
+  - mark-singleton.yaml
   - warnes-gobalakrishnan.yaml
 
 patches:
