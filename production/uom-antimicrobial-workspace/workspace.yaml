@@ -15,8 +15,17 @@ spec:
       name: jupyter-uom-antimicrobial-workspace
     resources:
       requests:
-        memory: 11G
-        cpu: 0.25
+        memory: 30G
+        cpu: 3
       limits:
-        memory: 12G
-        cpu: 2
+        memory: 32G
+        cpu: 8
+    tolerations:
+    - key: "xlscsde.nhs.uk/nodeSize"
+      operator: "Equal"
+      value: "large"
+      effect: "NoSchedule"
+    - key: "xlscsde.nhs.uk/appType"
+      operator: "Equal"
+      value: "datascience-notebook"
+      effect: "NoSchedule"
